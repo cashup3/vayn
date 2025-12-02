@@ -518,27 +518,38 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
     
     .logo {
         order: 1;
+        position: static;
     }
     
     .nav-menu {
-        margin: 0;
+        margin: 0 auto;
         order: 2;
     }
     
     .menu-toggle {
-        display: flex;
-        position: static;
+        display: none;
     }
 
     .desktop-nav {
-        display: none;
+        display: flex;
+    }
+    
+    .desktop-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .desktop-nav a {
+        font-size: 0.85rem;
     }
 
     .hero-title {
