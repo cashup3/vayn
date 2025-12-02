@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="VAYN.png" alt="VAYN" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="menu-overlay">
+                    <div class="menu-content">
+                        <nav class="main-nav">
+                            <ul>
+                                <li><a href="#music">Music</a></li>
+                                <li><a href="#videos">Videos</a></li>
+                                <li><a href="#tour">Tour</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="social-nav">
+                            <ul>
+                                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                                <li><a href="#" aria-label="Spotify">Spotify</a></li>
+                                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                                <li><a href="#" aria-label="Youtube">Youtube</a></li>
+                                <li><a href="#" aria-label="Soundcloud">Soundcloud</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="desktop-nav">
+                    <ul>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#tour">Tour</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://progressive-cdn.ustudio.com/ustudio/app/transcodes/TNRWPd0fSHyX.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title">ITS JUST A START</h2>
+                <a href="#" class="listen-button">Listen Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <button class="email-signup-btn" id="emailSignupBtn">Enter Your E-Mail</button>
+            <nav class="footer-social">
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Soundcloud"><i class="fab fa-soundcloud"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Email Signup Modal -->
+    <div class="modal-overlay" id="emailModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">×</button>
+            <div class="modal-header">
+                <h3>SIGN UP FOR NEWS & UPDATES</h3>
+            </div>
+            <form class="email-form" id="emailForm">
+                <div class="form-group">
+                    <label for="email">* email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">choose country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select...</option>
+                        <option value="US">United States of America (the)</option>
+                        <option value="CA">Canada</option>
+                        <option value="GB">United Kingdom of Great Britain and Northern Ireland (the)</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AU">Australia</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CN">China</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="IN">India</option>
+                        <option value="IT">Italy</option>
+                        <option value="JP">Japan</option>
+                        <option value="MX">Mexico</option>
+                        <option value="RU">Russian Federation (the)</option>
+                        <option value="ES">Spain</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subscribe_nav" checked>
+                        Subscribe to E-mails from NAV
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subscribe_republic">
+                        Subscribe to E-mails from Republic Records
+                    </label>
+                </div>
+                <div class="form-disclaimer">
+                    <p>Emails will be sent by or on behalf of Universal Music Group 2220 Colorado Avenue, Santa Monica, CA 90404 (310) 865-4000. You may withdraw your consent at any time. <a href="#">Privacy Policy</a> / <a href="#">Do Not Sell My Personal Information</a></p>
+                </div>
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+            <div class="success-message" id="successMessage" style="display: none;">
+                <h3>THANK YOU!</h3>
+                <p>Thank you for registering! We have sent a confirmation email to <span id="userEmail"></span>. Click the link to confirm your email address.</p>
+                <p>Please check your spam folder for the email, if it does not arrive, <a href="#" id="resendLink">click this link...</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
