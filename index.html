@@ -3,20 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vayn</title>
+    <title>Vayn | Official Music, Videos & Tour – Listen on Spotify</title>
+    <meta name="description" content="Vayn – Official artist site. Music, videos, tour dates and merch. Listen on Spotify and follow on Instagram. It's just a start.">
+    <meta name="keywords" content="Vayn, Vayn artist, Vayn music, itsvayn, Vayn Spotify, Vayn tour, Vayn official">
+    <meta name="author" content="Vayn">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://itsvayn.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itsvayn.com/">
+    <meta property="og:title" content="Vayn | Official Music, Videos & Tour">
+    <meta property="og:description" content="Official Vayn artist site. Music, videos, tour dates. Listen on Spotify – It's just a start.">
+    <meta property="og:image" content="https://itsvayn.com/VAYN.png">
+    <meta property="og:site_name" content="Vayn">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vayn | Official Music, Videos & Tour">
+    <meta name="twitter:description" content="Official Vayn artist site. Music, videos, tour. Listen on Spotify – It's just a start.">
+    <meta name="twitter:image" content="https://itsvayn.com/VAYN.png">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bakbak+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Structured Data for Google (Artist + Website) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MusicGroup",
+          "@id": "https://itsvayn.com/#artist",
+          "name": "Vayn",
+          "url": "https://itsvayn.com/",
+          "description": "Vayn – Official artist site. Music, videos, tour dates. Listen on Spotify.",
+          "image": "https://itsvayn.com/VAYN.png",
+          "sameAs": [
+            "https://www.instagram.com/itsvayn",
+            "https://open.spotify.com/artist/6a6yMaeJjBWSK5XLEK7tf5"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://itsvayn.com/#website",
+          "url": "https://itsvayn.com/",
+          "name": "Vayn Official",
+          "description": "Official Vayn music, videos and tour",
+          "publisher": { "@id": "https://itsvayn.com/#artist" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="/">
-                    <img src="VAYN.png" alt="VAYN" class="logo-img">
+                <a href="/" aria-label="Vayn – Home">
+                    <img src="VAYN.png" alt="Vayn – Official Artist Website" class="logo-img" width="120" height="40" fetchpriority="high">
                 </a>
             </div>
             <nav class="nav-menu">
@@ -69,7 +119,7 @@
                 <div class="video-overlay"></div>
             </div>
             <div class="hero-content">
-                <h2 class="hero-title">ITS JUST A START</h2>
+                <h1 class="hero-title"><span class="sr-only">Vayn – </span>ITS JUST A START</h1>
                 <a href="https://open.spotify.com/artist/6a6yMaeJjBWSK5XLEK7tf5?si=2ivYRVAPQt6BgJhdUAVt0A" target="_blank" rel="noopener noreferrer" class="listen-button">Listen Now</a>
             </div>
         </section>
