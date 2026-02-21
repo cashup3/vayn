@@ -125,7 +125,7 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Video background handling
+// Video background handling - ensure full video visible on all screen sizes
 const heroVideo = document.querySelector('.hero-background video');
 if (heroVideo) {
     heroVideo.addEventListener('loadeddata', () => {
@@ -133,6 +133,16 @@ if (heroVideo) {
             console.log('Video autoplay prevented:', err);
         });
     });
+    
+    function fitVideoToViewport() {
+        heroVideo.style.objectFit = 'contain';
+        heroVideo.style.objectPosition = 'center center';
+    }
+    
+    heroVideo.addEventListener('loadedmetadata', fitVideoToViewport);
+    fitVideoToViewport();
+    window.addEventListener('resize', fitVideoToViewport);
+    window.addEventListener('orientationchange', () => setTimeout(fitVideoToViewport, 100));
 }
 
 // Add loading animation
